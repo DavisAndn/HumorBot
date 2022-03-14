@@ -14,4 +14,4 @@ A: Automoderator doesn't have a feature allowing rule enforcement only on specif
 
 **Q: The bot removed my post when it wasn't supposed to. What do I do?**
 
-A: Contact the r/ClashOfClans mods here. Or send a DM to /u/DavisAF 
+A: Contact the r/ClashOfClans [mods](https://www.reddit.com/message/compose?to=%2Fr%2FClashOfClans&subject=about%20my%20removed%20submission&message=I%27m%20writing%20to%20you%20about%20the%20following%20submission:%20https://www.reddit.com/r/ClashOfClans/comments/tdnhwl/-/.%20%0D%0DMy%20issue%20is%2E%2E%2E) here. Or send a DM to /u/DavisAF 
