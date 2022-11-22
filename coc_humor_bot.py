@@ -1,12 +1,22 @@
 import praw
+import os
 
-reddit = praw.Reddit(client_id='###',
-client_secret='###',
-user_agent='###',
-username='###',
-password='###')
+client_id=os.environ['CLIENT_ID']
 
-subreddit = reddit.subreddit("clashofclans")
+client_secret=os.environ['CLIENT_SECRET']
+user_agent=os.environ['USER_AGENT']
+
+username=os.environ['USERNAME']
+
+password=os.environ['PASSWORD']
+
+reddit = praw.Reddit(client_id=client_id,
+client_secret=client_secret,
+user_agent=user_agent,
+username=username,
+password=password)
+
+subreddit = reddit.subreddit("clashtest")
 
 for submission in subreddit.stream.submissions(skip_existing=True):
     unixtime = submission.created_utc
