@@ -1,20 +1,20 @@
 import praw
 import os
 
-client_id=os.environ['CLIENT_ID']
+CID=os.environ['CLIENT_ID']
 
-client_secret=os.environ['CLIENT_SECRET']
-user_agent=os.environ['USER_AGENT']
+CSecret=os.environ['CLIENT_SECRET']
+useragent=os.environ['USER_AGENT']
 
-username=os.environ['USERNAME']
+Uname=os.environ['USERNAME']
 
-password=os.environ['PASSWORD']
+Pwd=os.environ['PASSWORD']
 
-reddit = praw.Reddit(client_id=client_id,
-client_secret=client_secret,
-user_agent=user_agent,
-username=username,
-password=password)
+reddit = praw.Reddit(client_id=CID,
+client_secret=CSecret,
+user_agent=useragent,
+username=Uname,
+password=Pwd)
 
 subreddit = reddit.subreddit("clashtest")
 
