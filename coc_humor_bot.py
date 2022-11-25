@@ -9,6 +9,7 @@ useragent=os.environ['USER_AGENT']
 Uname=os.environ['USERNAME']
 
 Pwd=os.environ['PASSWORD']
+subname=os.environ['SUB_NAME']
 
 reddit = praw.Reddit(client_id=CID,
 client_secret=CSecret,
@@ -16,7 +17,7 @@ user_agent=useragent,
 username=Uname,
 password=Pwd)
 
-subreddit = reddit.subreddit("clashtest")
+subreddit = reddit.subreddit(subname)
 
 for submission in subreddit.stream.submissions(skip_existing=True):
     unixtime = submission.created_utc
